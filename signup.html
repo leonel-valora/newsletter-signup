@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up | News Latter</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <style>
+        .btn-primary, .form-control:focus {
+            border-color: #9F6BA0;
+        }
+        .btn-primary {
+            background-color: #4A2040;
+        }
+        .btn-primary:hover, .btn-primary:active, .btn-primary:focus {
+            background-color: #9F6BA0;
+            border-color: #9F6BA0;
+        }
+        .form-control:focus, .btn-primary:focus, .btn-primary:active:focus {
+            box-shadow: 0 0 3px .2rem rgba(74, 32, 64, .3);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-md-6">
+                <img src="/images/newsletter.svg" alt="news letter illustation" width="100%">
+            </div>
+            <div class="col-md-6">
+                <div class="text-center">
+                    <h1>Sign Up | Newsletter</h1>
+                    <p class="fst-italic text-muted">Fill out the fields and sing up for newsletter</p>
+                </div>
+                
+                <form action="/" method="POST">
+                    <div class="mb-2">
+                        <label for="nombre" class="form-label">First Name</label>
+                        <input id="nombre"class="form-control" type="text" placeholder="Enter your first name" name="firstName" required>
+                    </div>
+                    <div class="mb-2">
+                        <label for="apellido" class="form-label">Last Name</label>
+                        <input id="apellido" class="form-control" type="text" placeholder="Enter your last name" name="lastName" required>
+                    </div>
+                    <div class="mb-5">
+                        <label for="correo" class="form-label">Email</label>
+                        <input id="correo" class="form-control" type="text" placeholder="Enter your email address" name="email" required>
+                    </div>
+                    <input class="form-control btn btn-primary text-uppercase" type="submit" value="Sign Me Up">
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
